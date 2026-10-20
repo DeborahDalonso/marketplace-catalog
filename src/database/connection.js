@@ -4,7 +4,9 @@ import mysql from 'mysql2/promise';
 export async function ensureDatabase({ database, ...options }) {
     const conn = await mysql.createConnection(options);
     try {
-        await conn.query(`CREATE DATABASE IF NOT EXISTS \`${database}\` CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci`);
+        await conn.query(
+            `CREATE DATABASE IF NOT EXISTS \`${database}\` CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci`,
+        );
     } finally {
         await conn.end();
     }

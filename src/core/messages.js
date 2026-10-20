@@ -14,7 +14,7 @@ const MESSAGES = {
     'validation.in': 'deve ser um de: {values}',
     'request.invalid_json': 'Corpo da requisição não é um JSON válido',
     'route.not_found': 'Rota não encontrada',
-    'internal_error': 'Erro interno, tente novamente mais tarde',
+    internal_error: 'Erro interno, tente novamente mais tarde',
     'product.not_found': 'Produto não encontrado',
     'product.forbidden': 'Este produto pertence a outro vendedor',
     'product.already_deleted': 'Produto já foi removido',

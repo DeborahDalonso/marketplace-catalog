@@ -42,7 +42,16 @@ export async function seed(db, logger) {
         await db.query(
             `INSERT INTO products (id, seller_id, category_id, name, slug, description, price_cents, stock)
              VALUES (?, ?, ?, ?, ?, ?, ?, ?)`,
-            [id, SEED_SELLER_ID, SEED_CATEGORIES[categoryIndex].id, name, slugify(name), description, priceCents, stock],
+            [
+                id,
+                SEED_SELLER_ID,
+                SEED_CATEGORIES[categoryIndex].id,
+                name,
+                slugify(name),
+                description,
+                priceCents,
+                stock,
+            ],
         );
     }
 
