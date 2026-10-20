@@ -1,0 +1,38 @@
+{
+    "name": "marketplace-catalog",
+    "version": "1.0.0",
+    "description": "Catálogo de produtos do marketplace: produtos, categorias e reserva de estoque",
+    "type": "module",
+    "private": true,
+    "license": "MIT",
+    "author": "Deborah Dalonso",
+    "engines": {
+        "node": ">=22"
+    },
+    "scripts": {
+        "start": "node src/index.js",
+        "dev": "node --watch src/index.js",
+        "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+        "lint": "eslint . && prettier --check .",
+        "format": "prettier --write ."
+    },
+    "dependencies": {
+        "dotenv": "18.0.8",
+        "express": "4.22.3",
+        "jose": "6.2.12",
+        "kafkajs": "2.2.4",
+        "mysql2": "3.24.6",
+        "pino": "10.4.0",
+        "ulid": "3.0.2"
+    },
+    "devDependencies": {
+        "@eslint/js": "10.0.1",
+        "eslint": "10.13.0",
+        "eslint-config-prettier": "10.1.8",
+        "globals": "17.13.0",
+        "jest": "29.7.0",
+        "pino-pretty": "13.2.0",
+        "prettier": "3.9.10",
+        "supertest": "7.3.1"
+    }
+}
